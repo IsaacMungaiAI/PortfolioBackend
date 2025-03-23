@@ -32,6 +32,7 @@ app.get("/projects", (req, res) => {
             return res.status(500).json({ error: "Database projects query failed" });
         }
         res.json(result);
+        console.log(result);
     });
 });
 
