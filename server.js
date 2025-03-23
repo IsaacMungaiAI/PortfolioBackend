@@ -4,7 +4,13 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(cors(
+    {
+        origin: "http://localhost:5173", // Change this to your frontend URL
+        methods: "GET,POST",
+        credentials: true
+    }
+));
 app.use(express.json());
 
 // Create database connection using an object
