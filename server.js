@@ -6,7 +6,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors(
     {
-        origin: "http://localhost:5173", // Change this to your frontend URL
+        origin: "https://isaacmungai.vercel.app/", // Change this to your frontend URL
         methods: "GET,POST",
         credentials: true
     }
