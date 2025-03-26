@@ -6,8 +6,8 @@ const cors = require("cors");
 const app = express();
 app.use(cors(
     {
-        origin: "https://isaacmungai.vercel.app/", // Change this to your frontend URL
-        methods: "GET,POST",
+        origin: "https://isaacmungai.vercel.app", // Change this to your frontend URL
+        methods: "GET,POST,PUT,DELETE,OPTIONS",
         credentials: true
     }
 ));
